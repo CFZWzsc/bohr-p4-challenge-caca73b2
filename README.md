@@ -9,7 +9,7 @@ answers, private data or credentials are included.
 ## Skill
 
 - Name: `results-discussion-writer`
-- Summary: Use when a case supplies raw result materials (tables, figure captions, statistics text, draft notes) and asks for a Results and Discussion section; extracts numeric claims with units and error-bar meaning, separates observation from interpretation, audits claim strength against statistics, keeps a source map, and emits /app/output/result.json preserving case_id and every output_contract field. Deterministic standard library only; no network.
+- Summary: Use when a case supplies raw result materials (tables, figure captions, statistics text, draft notes) and asks for a Results and Discussion section; extracts numeric claims with units and error-bar meaning, separates observation from interpretation, audits claim strength against statistics, and emits /app/output/result.json preserving case_id and every output_contract field. Deterministic standard library only; no network.
 
 ## Contents
 
