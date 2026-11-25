@@ -1,13 +1,13 @@
 ---
 name: bohr-writing-10
-description: 当需要写作科研材料并产出可复核的结构化结果时使用。 本题范围：写作10｜结果与讨论章节写作。 题目家族：结果与讨论章节写作。 任务要求：Synthetic interface example only; actual task inputs are supplied at evaluation. 产出 result.json，其中包含运行时 output_contract 要求的全部字段，每条结论附带原文证据（段落定位 + 短引），无法从材料判断的部分如实写入 uncertainty 而非编造。
+description: 当需要写作科研材料并产出可复核的结构化结果时使用。 本题范围：写作10｜结果与讨论章节写作。 题目家族：结果与讨论章节写作。 任务要求：结果章节只陈述发现并按图表分组；讨论章节写解释、对照、机制与局限；因果表述必须有对照或重复设计支撑。 产出 result.json，其中包含运行时 output_contract 要求的全部字段，每条结论附带原文证据（段落定位 + 短引），无法从材料判断的部分如实写入 uncertainty 而非编造。
 ---
 
 # 写作10｜结果与讨论章节写作
 
 ## 用途
 
-本题属于**writing** 赛道。目标能力：在保留原始事实（数字、单位、引用、图表编号、专有名词）的前提下改写与扩写学术文本，产出可直接落盘的成稿，并给出逐条可核验的变更记录。
+本题属于**writing** 赛道。目标能力：结果章节只陈述发现并按图表分组；讨论章节写解释、对照、机制与局限；因果表述必须有对照或重复设计支撑。
 
 本 Skill 在 DeepSeek Harness 中被加载到 `/skills/weekly-skill`。
 Harness 会在 3 个固定科研案例上分别调用它；每个案例的输入是
@@ -16,7 +16,7 @@ Harness 会在 3 个固定科研案例上分别调用它；每个案例的输入
 
 ## 任务要求（来自题面）
 
-Synthetic interface example only; actual task inputs are supplied at evaluation.
+结果章节只陈述发现并按图表分组；讨论章节写解释、对照、机制与局限；因果表述必须有对照或重复设计支撑。
 
 本题可预知的契约键（来自公开样例 `example-input.json`；**实际以运行时 `/input/case.json` 为准**，下表仅供预热）：
 
@@ -28,7 +28,7 @@ Synthetic interface example only; actual task inputs are supplied at evaluation.
 
 ## 交付物
 
-result.json（契约齐全）、改写稿、evidence_map、change_log
+results.md、discussion.md、pairing.json、causality-guard.json
 
 交付物的**内容契约**由运行时 `output_contract` 决定（见下）；下面「交付物落盘
 要求」给出的是必须真实存在的**文件**。
