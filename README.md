@@ -2,9 +2,9 @@
 
 本题：写作10｜结果与讨论章节写作（challenge-caca73b2，赛道 writing）。
 
-能力定位：在保留原始事实（数字、单位、引用、图表编号、专有名词）的前提下改写与扩写学术文本，产出可直接落盘的成稿，并给出逐条可核验的变更记录
+能力定位：结果章节只陈述发现并按图表分组；讨论章节写解释、对照、机制与局限；因果表述必须有对照或重复设计支撑。
 
-交付物：result.json（契约齐全）、改写稿、evidence_map、change_log
+交付物：results.md、discussion.md、pairing.json、causality-guard.json
 
 
 ## 这个 Skill 做什么
